@@ -24,15 +24,13 @@ h1,h2,h3,h4,h5,h6 {font-family: "Courier New", sans-serif;}
 <div class="w3-top">
   <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
     <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-theme-l1">Portslade Standard</a>
-    <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Top headlines</a>
-    <a href="Local.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Local stories</a>
-    <a href="Community.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Community page</a>
-	  <a href="Council.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Council</a>
-	  <a href="Lifestyle.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Lifestyle</a>
-	  <a href="Sport.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sport</a>
-    <a href="Contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-    <a href="Partners.html" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-hover-white">Partners</a>
+    <a onclick="myFunction1()" class="w3-bar-item w3-button w3-theme-l1">Portslade Standard</a>
+    <a onclick="myFunction1()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Top headlines</a>
+    <a onclick="myFunction2()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Local stories<a/>  
+	  <a onclick="myFunction3()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Lifestyle</a>
+	  <a onclick="myFunction4()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Sport</a>
+    <a onclick="myFunction5()" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
+    
 	  
   </div>
 </div>
@@ -46,7 +44,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Courier New", sans-serif;}
 <!-- Main content: First story-->
 <div class="w3-main" style="margin-left:250px">
 
-  <div class="w3-row w3-padding-64">
+  <div id="p1" class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
       <h1 class="">Introduction</h1><!-- Title-->
       <p>The Portslade Standard has started. Welcome to the page, news will be added everytime it arrives. We rely on the community to send in their 
@@ -59,21 +57,131 @@ h1,h2,h3,h4,h5,h6 {font-family: "Courier New", sans-serif;}
       <img src="assets/villgren3.jpg" alt="Trulli" width="300" height="200">
     </div>
   </div>
-<!-- Main content: second tory-->
-  
-
+<!-- second page (local) -->
+	<div id="p2">
+  <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="">Portslade Manor house history</h1><!-- Title-->
+		<h2>History column</h2>
+      <p>The old Portslade Manor ruins is one of the oldest monuments in Portslade. A historically protected building, with national importance
+		  <br />
+          After the Lord of the manor moved to a new manor house, currently the Emmaus building, 
+		  the building was used as a poor house. Local theory is that the Lord of the manor did not 
+		  like the impoverished living so close to his home, thus had it destroyed. The bricks were used to make a folly, 
+		  currently next to the Emmaus building. Back in the Victorian Era, it became popular to have a folly on your land<br />
+		
+		  The ruins are currently overgrown, and under the jurisdiction of Brighton and Hove council. A local group of volunteers 
+		  has been looking into the restoration of the Manor house, and have it viewable by the public. It will be an add on the 
+		  the Portslade History Trail made by the charity Fresh Start Portslade.
+		  <br />
+		</p>
+	  </div>
+	<div class="w3-third w3-container">
+      
+      <img src="assets/manor.png" alt="manor" width="300" height="200">
+    </div>
+		<div class="w3-row w3-padding-64">
+	  <h1 class="">Portslade's village sealegs</h1><!-- Title-->
+		<h2>Notable residents column</h2>
+      <p>Every sunday we will be posting a column on notable Portslade residents, both past and present.
+		<br />
+		Today's notable resident is Samual Isger, Royal navy. As it is Merchant Navy day tomorrow, it's more than fitting to do a maritime figure.
+		<br />
+		Isger was a Naval veteran, having joined the Royal Navy in 1852. Records state that he was of small stature, being only 5-ft and 1in. tall, with a fair complexion and grey eyes.
+		<br />
+		He served on board many ships and every commander he served under described his conduct as being "very good". It may not sound it, but in military terms that is very high.
+		<br />
+		The ships he served on were:
+		<br />•HMS London (1853-1856)
+		<br />•HMS Batterer(1856)
+		<br />•HMS Raleigh(1856)
+		<br />•HMS Alligator(1857)
+		<br />•HMS Nanking 1857-1859)
+		<br />•HMS Victory (1859)
+		<br />•HMS Hannibal (1859)
+		<br />
+		Being after the battle of Trafalgar (1805), to serve on board HMS Victory was considered a great honour.
+		<br />
+		Source of infomation: 
+		http://portsladehistory.blogspot.com/2018/01/carlton-terrace-portslade.html?m=1
+		  <br />
+		</p>
+    </div>
+	  <div class="w3-third w3-container">
+      
+      <img src="assets/navy.png" alt="Trulli" width="300" height="200">
+    </div>
+  </div>
+	</div>
+	<!-- Third page (lifestyle) -->
+	<div id="p3"class="w3-row-padding w3-padding-16 w3-center" id="food">
+    <div class="w3-quarter">
+      <img src="assets/runner-bean-soup.jpg" alt="New" style="width:100%">
+      <h3>Try something new</h3>
+      <p>Have you ever thought about runner bean soup? Runner beans are easy, and cheap to grow. From a few seeds your fridge can become full up! 
+		Runner bean soup is refreshing, and healthy. All ou need are a few ingredients to make this delicious dish.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/yellow.jpg" alt="Fashion" style="width:100%">
+      <h3>Fashion</h3>
+      <p>Yellow is taking to the streets. Portslade was formally a rural community, it's time to show off the yellow country look.</p>
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/park.jpg" alt="Food" style="width:100%">
+      <h3>Food</h3>
+      <p>There is nothing as fine as the Easthill park cafe. Have a coffee in the green flag park, or perhaps get a takeaway cup and sit in Portslades historic
+		 walled garden. There is much to see in Portslade.</p>
+       
+    </div>
+    <div class="w3-quarter">
+      <img src="assets/home.jpg" alt="Home" style="width:100%">
+      <h3>Home</h3>
+      <p>The village is home to many historical buildings, but one could be your own. Live the life of the former Lords of Portslade in this opulent home.</p>
+    </div>
+  </div>
+	
+	<!--Fourth page (sport) -->
+	<div id="p4" class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="">Charity match for Albion star</h1><!-- Title-->
+		<h2>Sports and events column</h2>
+      <p>Southwick XI
+		<br />V 
+		<br />Brighton Legends 
+		<br />Come along to the charity match on Sunday 16th September at 1pm. £2 entry all for a good cause!
+		<br />In memory of the former Albion striker, player for millwall, RAF serviceman and Portslade resident John Shepherd
+		  <br />
+		</p>
+    </div>
+		<div class="w3-third w3-container">
+      
+      <img src="assets/grandad.png" alt="Trulli" width="300" height="200">
+    </div>
+  </div>
+	<!--Fith page (contact) -->
+	<div id="p5" class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+      <h1 class="">Contact</h1><!-- Title-->
+		
+      <p>
+		  <br />Email: portsladestandard@gmail.com
+		  <br />Instagram: portsladestandard
+		</p>
+    </div>
+		<div class="w3-third w3-container">
+      
+      <!-- <img src="assets/villgren3.jpg" alt="Trulli" width="300" height="200"> -->
+    </div>
+  </div>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
-      <a class="w3-button w3-black" href="index.html">1</a>
-      <a class="w3-button w3-hover-black" href="Local.html">2</a>
-      <a class="w3-button w3-hover-black" href="Community.html">3</a>
-      <a class="w3-button w3-hover-black" href="Council.html">4</a>
-      <a class="w3-button w3-hover-black" href="Lifestyle.html">5</a>
-	  <a class="w3-button w3-hover-black" href="Sport.html">6</a>
-   	  <a class="w3-button w3-hover-black" href="Contact.html">7</a>
-	  <a class="w3-button w3-hover-black" href="Partners.html">8</a>
-      <a class="w3-button w3-hover-black" href="#">&raquo;</a>
+      <a class="w3-button w3-hover-black" onclick="myFunction()">1</a>
+      <a class="w3-button w3-hover-black" onclick="myFunction2()">2</a>
+      <a class="w3-button w3-hover-black" onclick="myFunction3()">3</a>
+      <a class="w3-button w3-hover-black" onclick="myFunction4()">4</a>
+      <a class="w3-button w3-hover-black" onclick="myFunction5()">5</a>
+	  
     </div>
   </div>
 
@@ -83,7 +191,7 @@ h1,h2,h3,h4,h5,h6 {font-family: "Courier New", sans-serif;}
     </div>
 
     <div class="w3-container w3-theme-l1">
-      <p>Sponsored by <a href="" target="_blank">fdjfkdjs</a> </p>
+      <p>Find us on Instagram! <a href="www.instagram.com/portsladestandard" target="_blank">Click here for the page</a> </p>
     </div>
   </footer>
 
@@ -91,6 +199,83 @@ h1,h2,h3,h4,h5,h6 {font-family: "Courier New", sans-serif;}
 </div>
 
 <script>
+	x = document.getElementById("p2");
+    x.style.display = "none";
+    x = document.getElementById("p3");
+    x.style.display = "none";
+		x = document.getElementById("p4");
+    x.style.display = "none";
+		x = document.getElementById("p5");
+    x.style.display = "none";
+		
+	function myFunction1() {
+		var x = document.getElementById("p1");
+		x.style.display = "block";
+    x = document.getElementById("p2");
+    x.style.display = "none";
+    x = document.getElementById("p3");
+    x.style.display = "none";
+		x = document.getElementById("p4");
+    x.style.display = "none";
+		x = document.getElementById("p5");
+    x.style.display = "none";
+		
+		
+}
+	function myFunction2() {
+		var x = document.getElementById("p2");
+        x.style.display = "block";
+    x = document.getElementById("p1");
+    x.style.display = "none";
+    x = document.getElementById("p3");
+    x.style.display = "none";
+		x = document.getElementById("p4");
+    x.style.display = "none";
+		x = document.getElementById("p5");
+    x.style.display = "none";
+		
+    
+}
+	function myFunction3() {
+  var x = document.getElementById("p3");
+		x.style.display = "block";
+    x = document.getElementById("p2");
+    x.style.display = "none";
+    x = document.getElementById("p1");
+    x.style.display = "none";
+		x = document.getElementById("p4");
+    x.style.display = "none";
+		x = document.getElementById("p5");
+    x.style.display = "none";
+		
+}
+	function myFunction4() {
+		var x = document.getElementById("p4");
+		x.style.display = "block";
+    x = document.getElementById("p2");
+    x.style.display = "none";
+    x = document.getElementById("p3");
+    x.style.display = "none";
+		x = document.getElementById("p1");
+    x.style.display = "none";
+		x = document.getElementById("p5");
+    x.style.display = "none";
+		
+}
+	function myFunction5() {
+  var x = document.getElementById("p5");
+		x.style.display = "block";
+    x = document.getElementById("p2");
+    x.style.display = "none";
+    x = document.getElementById("p3");
+    x.style.display = "none";
+		x = document.getElementById("p4");
+    x.style.display = "none";
+		x = document.getElementById("p1");
+    x.style.display = "none";
+		
+}
+	
 // Get the Sidebar
 var mySidebar = document.getElementById("mySidebar");
 
